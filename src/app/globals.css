@@ -1,0 +1,26 @@
+@import "tailwindcss";
+@import "antd/dist/reset.css";
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 255, 255, 255;
+  --background-end-rgb: 255, 255, 255;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+.course-progress {
+  background: linear-gradient(90deg, #ff6b6b 0%, #ff8e8e 100%);
+}
+
+.rating-stars {
+  color: #ffc107;
+}
