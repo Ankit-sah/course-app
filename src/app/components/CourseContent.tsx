@@ -22,7 +22,7 @@ const CourseContent: React.FC<CourseContentProps> = ({ course }) => {
   };
 
   const renderDescription = () => (
-    <div className="space-y-6" id="description">
+    <div className="space-y-6 " id="description">
       <div>
         <h3 className="text-xl font-semibold mb-4">Course Description</h3>
         <div
@@ -104,7 +104,7 @@ const CourseContent: React.FC<CourseContentProps> = ({ course }) => {
   )
 
   return (
-    <div className="bg-white">
+    <div >
       <div className="mb-8">
         <h1 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
           {course.title}
@@ -114,7 +114,7 @@ const CourseContent: React.FC<CourseContentProps> = ({ course }) => {
         </p>
       </div>
 
-      <div className="flex flex-row justify-start gap-2 md:gap-4 lg:gap-6 w-full overflow-x-auto">
+      <div className="flex flex-row justify-start gap-2 md:gap-4 lg:gap-6 w-full overflow-x-auto mb-8">
          <Button onClick={() => scrollToId('description')}>Description</Button>
          <Button onClick={() => scrollToId('instructor')}>Instructor</Button>
          <Button onClick={() => scrollToId('syllabus')}>Syllabus</Button>
